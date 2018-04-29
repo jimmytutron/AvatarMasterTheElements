@@ -10,3 +10,51 @@
 // }
 
 // at the end of each win/loss condition reset the computer's number, the player's score and the values of the crystal
+
+//define the global variables
+
+//set global variables
+var wins = 0;
+var losts = 0;
+var element = $(".element");
+var fire = $(".fire");
+var water = $(".water");
+var earth = $(".earth");
+var air = $(".air");
+var avatarPower = 0;
+
+//generate the random number between 19-120
+var randomScore = Math.floor(Math.random() * 101) + 19;
+console.log(randomScore);
+//display the random number
+$("#result").html("Strength needed to reach Avatar State - " + randomScore + "%");
+
+//generate random numbers between 1-12 for each element
+for (var i = 0; i < 4; i++){
+var random = Math.floor(Math.random() * 11) + 1;
+fire.attr("value", random);
+}
+for (var i = 0; i < 4; i++){
+var random = Math.floor(Math.random() * 11) + 1;
+water.attr("value", random);
+}
+for (var i = 0; i < 4; i++){
+var random = Math.floor(Math.random() * 11) + 1;
+earth.attr("value", random);
+}
+for (var i = 0; i < 4; i++){
+var random = Math.floor(Math.random() * 11) + 1;
+air.attr("value", random);
+}
+
+//add the values of each element when user clicks the element
+element.on("click", function () {
+var elementValue = parseInt($(this).attr('value'));
+avatarPower += elementValue;
+
+console.log(avatarPower);
+
+
+});
+
+
