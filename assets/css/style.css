@@ -22,15 +22,6 @@ html, body {
 	background-position: top center;
 }
 
-@media only screen and (max-width: 991px){
-	.elements {
-		background-size: 75%;
-	}
-
-	#result {
-		font-size: 30px;
-	}
-}
 
 .element {
 	width: 300px;
@@ -82,6 +73,28 @@ html, body {
 .smaller {
 	font-weight: normal;
 	font-size: 25px;
+}
+
+
+@media only screen and (max-width: 991px){
+	.elements {
+		background-size: 75%;
+	}
+
+	#result {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	#result {
+		margin-top: 20%;
+		font-size: 25px;
+	}
+
+	.score {
+		font-size: 28px;
+	}
 }
 
 /* Pulse */
