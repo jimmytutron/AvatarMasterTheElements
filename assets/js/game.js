@@ -80,11 +80,12 @@ if (avatarPower > avatarState){
 	var randomLossGif = lossGifs[Math.floor(Math.random() * lossGifs.length)];
 	$("#result").html("The power overwhelmed Aang! Try Again...  <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomLossGif);
-	console.log(randomLossGif);
+	avatarState = 99999;
 	avatarPower = 0;
-	intializeAvatar();
 
 	$(".aang").on("click", function(){
+	avatarPower = 0;
+	intializeAvatar();
 	$("#result").html("But I believe, Aang can save the world...");
 	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>");
 	});
@@ -96,10 +97,12 @@ else if (avatarPower === avatarState){
 	var randomWinGif= winGifs[Math.floor(Math.random() * winGifs.length)];
 	$("#result").html("You have achieved the Avatar state! <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomWinGif);
+	avatarState = 99999;
 	avatarPower = 0;
-	intializeAvatar();
 
 	$(".aang").on("click", function(){
+	avatarPower = 0;
+	intializeAvatar();
 	$("#result").html("But I believe, Aang can save the world...")
 	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>");
 	});
