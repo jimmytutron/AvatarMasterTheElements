@@ -79,7 +79,7 @@ console.log(avatarPower);
 if (avatarPower > avatarState){
 	losses++;
 	$("#lose").html(losses);
-	$("#result").html("'The power overwhelmed Aang! Try Again...'  <br> <span class ='smaller'> click on Aang to play again </span> ");
+	$("#result").html("The power overwhelmed Aang! Try Again...  <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomLossGif);
 	avatarPower = 0;
 	intializeAvatar();
@@ -93,7 +93,7 @@ if (avatarPower > avatarState){
 else if (avatarPower === avatarState){
 	wins++;
 	$("#win").html(wins);
-	$("#result").html("'You have achieved the Avatar state!' <br> <span class ='smaller'> click on Aang to play again </span> ");
+	$("#result").html("You have achieved the Avatar state! <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomWinGif);
 	avatarPower = 0;
 	intializeAvatar();
