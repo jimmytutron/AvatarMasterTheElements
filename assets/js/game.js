@@ -55,7 +55,6 @@ $(".result_gif").html("<video width='100%' height='300' control autoplay><source
 var intializeAvatar = function(){
 
 	//generates the random number again, each time function is called
-
 	avatarState = Math.floor(Math.random() * 101) + 19;
 
 	//displays the random number and the user's current score
@@ -63,7 +62,6 @@ var intializeAvatar = function(){
 	$("#userStrength").html(avatarPower);
 
 	// generate random numbers between 1-12 for each element
-
 	function generateNum (elementName){
 
 
