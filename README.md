@@ -36,7 +36,7 @@ Launch the game here! [Avatar - Master the Elements](https://jimmytutron.github.
 
 ## Acknowledgments
 
-Thanks to the following people for their open source css libraries.
+Thanks to the following people for their open source css libraries. Helped add a little *_pizzaz_* to my game.
 
 * [Animate.css](https://daneden.github.io/animate.css/) - [Daniel Eden](https://daneden.me/)
 * [Hover.css](http://ianlunn.github.io/Hover/) - [Ian Lunn](https://github.com/IanLunn)

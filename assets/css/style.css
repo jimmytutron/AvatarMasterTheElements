@@ -44,10 +44,6 @@ html, body {
 	margin-left: -1%;
 }
 
-.fill {
-	flex-grow:1;
-}
-
 .center {
 	display: block;
 	margin: auto;

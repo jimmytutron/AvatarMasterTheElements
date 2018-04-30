@@ -23,36 +23,51 @@ var earth = $(".earth");
 var air = $(".air");
 var avatarPower = 0;
 
+
+//dem gifs doe
 var winGifs = ["<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate2.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate3.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate4.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate5.gif'/>"]
 
-var lossGifs =["<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss1.gif'/>",
+var lossGifs = ["<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss1.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss2.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss3.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss4.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss5.gif'/>"]
 
-
+var mainGif = ["<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace3.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace4.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace5.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace6.gif'/>"]
 
 //generate the random number between 19-120
 var avatarState = Math.floor(Math.random() * 101) + 19;
 
 $("#result").html("But I believe, Aang can save the world...");
+//I apologize for the autoplay
 $(".result_gif").html("<video width='100%' height='300' control autoplay><source src='assets/imgs/avatar_video.mp4' type='video/mp4'></video>");
 
+//function that starts and resets the game
 var intializeAvatar = function(){
 
+	//generates the random number again, each time function is called
+
 	avatarState = Math.floor(Math.random() * 101) + 19;
+
+	//displays the random number and the user's current score
 	$("#strength").html(avatarState);
 	$("#userStrength").html(avatarPower);
 
 	// generate random numbers between 1-12 for each element
 
 	function generateNum (elementName){
-	
+
+
+	//generate random numbers for each of the four elements
 	for (var i = 0; i < 4; i++){
 	var random = Math.floor(Math.random() * 11) + 1;
 	elementName.attr("value", random);
@@ -75,24 +90,32 @@ $("#userStrength").html(avatarPower);
 // console.log(avatarPower);
 
 if (avatarPower > avatarState){
+	//add to 'defeats' counter
 	losses++;
+	//update the score in HTML
 	$("#lose").html(losses);
+	//display random loser gif and loss message
 	var randomLossGif = lossGifs[Math.floor(Math.random() * lossGifs.length)];
 	$("#result").html("The power overwhelmed Aang! Try Again...  <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomLossGif);
+	//reset the values
 	avatarState = 99999;
 	avatarPower = 0;
 
+	//restarts the game
 	$(".aang").on("click", function(){
 	avatarPower = 0;
 	intializeAvatar();
 	$("#result").html("But I believe, Aang can save the world...");
-	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>");
+	var randomMainGif = mainGif[Math.floor(Math.random() * mainGif.length)];
+	$(".result_gif").html(randomMainGif);
 	});
 
 } 
 else if (avatarPower === avatarState){
+	//add to the 'win' counter
 	wins++;
+	//updates score in HTML
 	$("#win").html(wins);
 	var randomWinGif= winGifs[Math.floor(Math.random() * winGifs.length)];
 	$("#result").html("You have achieved the Avatar state! <br> <span class ='smaller'> click on Aang to play again </span> ");
@@ -104,7 +127,8 @@ else if (avatarPower === avatarState){
 	avatarPower = 0;
 	intializeAvatar();
 	$("#result").html("But I believe, Aang can save the world...")
-	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>");
+		var randomDefaultGif = mainGif[Math.floor(Math.random() * mainGif.length)];
+	$(".result_gif").html(randomMainGif);
 	});
 
 }
