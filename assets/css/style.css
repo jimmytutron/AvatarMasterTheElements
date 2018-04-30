@@ -2,17 +2,18 @@ html, body {
 	background-image: url("../imgs/ricepaper.png");
 }
 
+
 .aang {
 	margin-bottom: -100px;
 }
 
 #result {
 	text-align: center;
-	font-family: 'Nanum Myeongjo', serif;
-	font-weight: 800;
-	font-size: 40px;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	font-size: 34px;
 	letter-spacing: 3px;
-	color:#997d52;
+	color:#865c5c;
 }
 
 .elements {
@@ -24,6 +25,10 @@ html, body {
 @media only screen and (max-width: 991px){
 	.elements {
 		background-image: none;
+	}
+
+	#result {
+		font-size: 30px;
 	}
 }
 
@@ -44,8 +49,8 @@ html, body {
 	color: #90837b;
 }
 
-.botder {
-	border: 2px solid blue;
+.about {
+	margin-left: -1%;
 }
 
 .fill {
@@ -64,6 +69,14 @@ html, body {
 
 #userStrength {
 	color: #5eac5a;
+}
+
+#win {
+	color:#1784d0;
+}
+
+#lose {
+	color:#be3939;
 }
 
 /* Pulse */

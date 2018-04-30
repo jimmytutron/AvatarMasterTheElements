@@ -8,7 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,700i|Nanum+Myeongjo:400,800" rel="stylesheet">
+
 
     <title>AVATAR : Master the elements</title>
   </head>
@@ -17,50 +20,50 @@
 
     <div class="row">
         <div class="col-sm">
-          <img class="img-fluid aang mx-auto d-block" src ="assets/imgs/avatar_state.png"/>
+          <img class="img-fluid aang mx-auto d-block animated fadeInDown" src ="assets/imgs/avatar_state.png"/>
         </div>
       </div>
       <div class="row my-2">
         <div class="col-sm">
-          <h2 id="result"></h2>
+          <h2 id="result" class="animated flipInX"></h2>
         </div>
       </div>
 
       <div class="row justify-content-md-center elements">
         <div class="col-lg-2 element water">
-          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse" src="assets/imgs/water.png"/>
+          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse animated jello" src="assets/imgs/water.png"/>
         </div>
         <div class="col-lg-2 element earth">
-          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse" src="assets/imgs/earth.png"/>
+          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse animated shake" src="assets/imgs/earth.png"/>
         </div>
         <div class="col-lg-2 element fire">
-          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse" src="assets/imgs/fire.png"/>
+          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse animated swing" src="assets/imgs/fire.png"/>
         </div>
         <div class="col-lg-2 element air">
-          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse" src="assets/imgs/air.png"/>
+          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse animated wobble" src="assets/imgs/air.png"/>
         </div>
       </div>
 
       <div class = "row justify-content-center">
         <div class = "col-sm-5 lora text-center">
-          <p class ="score">Power level needed: <span id="strength"></span></p>
+          <p class ="score">Power level needed: <span id="strength" class="animated flash"></span></p>
         </div>
         <div class = "col-sm-5 lora text-center">
-          <p class ="score">Current Power Level: <span id="userStrength"></span></p>
+          <p class ="score">Current Power Level: <span id="userStrength" class="animated flash"></span></p>
         </div>
       </div>
 
       <div class="row my-3">
         <div class="col-sm-7 result_gif">
         </div>
-        <div class="col-sm-5 lora w-100">
+        <div class="col-sm-5 lora about">
           <p> Sozin's Comet has passed through the night sky, greatly enhancing the strength of the Fire Nation. Aang must master the "Avatar State" to defeat Fire Lord Ozai and bring peace to the world. Help him by combining the powers of the four elements. Be warned however, if the strength of the elements surpasses the limits in which Aang can handle, he will perish and the world will fall into chaos. Good Luck!</p>
 
       <div class="row justify-content-center">
-        <div class="col-sm-5 lora text-center score">
+        <div class="col-sm-6 lora text-center score">
             <h2>Victories: <span id="win"></span></h2>
         </div>
-        <div class="col-sm-5 lora text-center score">
+        <div class="col-sm-6 lora text-center score">
             <h2>Defeats: <span id="lose"></span></h2>
         </div>
       </div>

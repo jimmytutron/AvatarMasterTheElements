@@ -100,7 +100,7 @@ else if (avatarPower === avatarState){
 
 	$(".element").on("click", function(){
 	$("#result").html("But I believe, Aang can save the world...")
-	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace.gif'/>");
+	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>");
 	});
 
 }
