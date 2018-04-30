@@ -24,7 +24,7 @@ html, body {
 
 @media only screen and (max-width: 991px){
 	.elements {
-		background-image: none;
+		background-size: 75%;
 	}
 
 	#result {
