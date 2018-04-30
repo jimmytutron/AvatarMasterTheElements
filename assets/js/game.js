@@ -35,8 +35,6 @@ var lossGifs =["<img class= 'img-fluid mx-auto d-block' width='500px' src='asset
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss4.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss5.gif'/>"]
 
-var randomWinGif = winGifs[Math.floor(Math.random() * winGifs.length)];
-var randomLossGif = lossGifs[Math.floor(Math.random() * lossGifs.length)];		   
 
 
 //generate the random number between 19-120
@@ -74,13 +72,15 @@ var elementValue = parseInt($(this).attr('value'));
 avatarPower += elementValue;
 
 $("#userStrength").html(avatarPower);
-console.log(avatarPower);
+// console.log(avatarPower);
 
 if (avatarPower > avatarState){
 	losses++;
 	$("#lose").html(losses);
+	var randomLossGif = lossGifs[Math.floor(Math.random() * lossGifs.length)];
 	$("#result").html("The power overwhelmed Aang! Try Again...  <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomLossGif);
+	console.log(randomLossGif);
 	avatarPower = 0;
 	intializeAvatar();
 
@@ -93,6 +93,7 @@ if (avatarPower > avatarState){
 else if (avatarPower === avatarState){
 	wins++;
 	$("#win").html(wins);
+	var randomWinGif= winGifs[Math.floor(Math.random() * winGifs.length)];
 	$("#result").html("You have achieved the Avatar state! <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomWinGif);
 	avatarPower = 0;
