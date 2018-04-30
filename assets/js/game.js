@@ -26,6 +26,8 @@ var avatarPower = 0;
 //generate the random number between 19-120
 var avatarState = Math.floor(Math.random() * 101) + 19;
 
+$("#result").html("But I believe, Aang can save the world...");
+
 var intializeAvatar = function(){
 
 	avatarState = Math.floor(Math.random() * 101) + 19;
@@ -46,6 +48,7 @@ var intializeAvatar = function(){
 	generateNum(air);
 
 }
+
 intializeAvatar();
 
 //add the values of each element when user clicks the element
@@ -63,6 +66,10 @@ if (avatarPower > avatarState){
 	avatarPower = 0;
 	intializeAvatar();
 
+	$(".element").on("click", function(){
+	$("#result").html("But I believe, Aang can save the world...");
+	});
+
 } 
 else if (avatarPower === avatarState){
 	wins++;
@@ -71,10 +78,11 @@ else if (avatarPower === avatarState){
 	avatarPower = 0;
 	intializeAvatar();
 
+	$(".element").on("click", function(){
+	$("#result").html("But I believe, Aang can save the world...")
+	});
+
 }
 
-
-
 });
-
 

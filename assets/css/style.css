@@ -1,10 +1,15 @@
-.container{
-	text-align: center;
+html, body {
+	background-image: url("../imgs/ricepaper.png");
 }
 
-.element {
-	border: 2px solid blue;
-	height: 100px;
-	width: 25%;
+.logo {
+	z-index: -1;
+}
+.aang {
 
+	margin-bottom: -100px;
+	z-index: -100;
+}
+.element {
+	width: 300px;
 }
