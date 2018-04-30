@@ -33,7 +33,7 @@ var lossGifs =["<img class= 'img-fluid mx-auto d-block' width='500px' src='asset
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss2.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss3.gif'/>",
 			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss4.gif'/>",
-			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss5'/>"]
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss5.gif'/>"]
 
 var randomWinGif = winGifs[Math.floor(Math.random() * winGifs.length)];
 var randomLossGif = lossGifs[Math.floor(Math.random() * lossGifs.length)];		   
@@ -79,12 +79,12 @@ console.log(avatarPower);
 if (avatarPower > avatarState){
 	losses++;
 	$("#lose").html(losses);
-	$("#result").html("The power overwhelmed Aang! Try Again...");
+	$("#result").html("'The power overwhelmed Aang! Try Again...'  <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomLossGif);
 	avatarPower = 0;
 	intializeAvatar();
 
-	$(".element").on("click", function(){
+	$(".aang").on("click", function(){
 	$("#result").html("But I believe, Aang can save the world...");
 	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>");
 	});
@@ -93,12 +93,12 @@ if (avatarPower > avatarState){
 else if (avatarPower === avatarState){
 	wins++;
 	$("#win").html(wins);
-	$("#result").html("You have achieved the Avatar state!");
+	$("#result").html("'You have achieved the Avatar state!' <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomWinGif);
 	avatarPower = 0;
 	intializeAvatar();
 
-	$(".element").on("click", function(){
+	$(".aang").on("click", function(){
 	$("#result").html("But I believe, Aang can save the world...")
 	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>");
 	});

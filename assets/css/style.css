@@ -79,6 +79,11 @@ html, body {
 	color:#be3939;
 }
 
+.smaller {
+	font-weight: normal;
+	font-size: 25px;
+}
+
 /* Pulse */
 @-webkit-keyframes hvr-pulse {
   25% {
