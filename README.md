@@ -4,7 +4,7 @@
 
 The time has come for Aang to master the elements and enter the "Avatar State". The fate of the world falls heavily on his shoulders. Help Aang defeat Fire Lord Ozai by mastering and combining the powers of water, earth, fire, and air. Be warned, however, the elements' powers are not to be taken lightly. Achieve the Avatar State and bring peace to the nations.
 
-### How to Play
+## How to Play
 
 A modern web browser is recommeded for playing this game. Thanks to Bootstrap, this game is fully responsive and playable on mobile devices.
 
