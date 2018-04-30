@@ -31,7 +31,7 @@ Launch the game here! [Avatar - Master the Elements](https://jimmytutron.github.
 * [jQuery](https://jquery.com/) - a javascript library
 * [Bootstrap](https://getbootstrap.com/) - The web framework used
 
-## Authors :chestnut:
+## Authors :earth_americas:
 
 * **Jimmy Tu** - [jimmytutron](https://github.com/jimmytutron)
 
