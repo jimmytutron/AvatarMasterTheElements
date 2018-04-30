@@ -23,34 +23,29 @@ var earth = $(".earth");
 var air = $(".air");
 var avatarPower = 0;
 
-	//generate the random number between 19-120
-
+//generate the random number between 19-120
 var avatarState = Math.floor(Math.random() * 101) + 19;
 
 var intializeAvatar = function(){
 
 	avatarState = Math.floor(Math.random() * 101) + 19;
 	$("#strength").html(avatarState);
+	$("#userStrength").html(avatarPower);
 
 	// generate random numbers between 1-12 for each element
-	for (var i = 0; i < 4; i++){
-	var random = Math.floor(Math.random() * 11) + 1;
-	fire.attr("value", random);
-	}
-	for (var i = 0; i < 4; i++){
-	var random = Math.floor(Math.random() * 11) + 1;
-	water.attr("value", random);
-	}
-	for (var i = 0; i < 4; i++){
-	var random = Math.floor(Math.random() * 11) + 1;
-	earth.attr("value", random);
-	}
-	for (var i = 0; i < 4; i++){
-	var random = Math.floor(Math.random() * 11) + 1;
-	air.attr("value", random);
-	}
-}
 
+	function generateNum (elementName){
+	
+	for (var i = 0; i < 4; i++){
+	var random = Math.floor(Math.random() * 11) + 1;
+	elementName.attr("value", random);
+	}}
+	generateNum(fire);
+	generateNum(earth);
+	generateNum(water);
+	generateNum(air);
+
+}
 intializeAvatar();
 
 //add the values of each element when user clicks the element
@@ -58,6 +53,7 @@ element.on("click", function () {
 var elementValue = parseInt($(this).attr('value'));
 avatarPower += elementValue;
 
+$("#userStrength").html(avatarPower);
 console.log(avatarPower);
 
 if (avatarPower > avatarState){
@@ -72,7 +68,7 @@ else if (avatarPower === avatarState){
 	wins++;
 	$("#win").html(wins);
 	$("#result").html("You have achieved the Avatar state!");
-	avatarPower: 0;
+	avatarPower = 0;
 	intializeAvatar();
 
 }
