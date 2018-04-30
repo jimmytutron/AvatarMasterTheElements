@@ -23,10 +23,27 @@ var earth = $(".earth");
 var air = $(".air");
 var avatarPower = 0;
 
+var winGifs = ["<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate2.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate3.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate4.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/avatarstate5.gif'/>"]
+
+var lossGifs =["<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss1.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss2.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss3.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss4.gif'/>",
+			   "<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/loss5'/>"]
+
+var randomWinGif = winGifs[Math.floor(Math.random() * winGifs.length)];
+var randomLossGif = lossGifs[Math.floor(Math.random() * lossGifs.length)];		   
+
+
 //generate the random number between 19-120
 var avatarState = Math.floor(Math.random() * 101) + 19;
 
 $("#result").html("But I believe, Aang can save the world...");
+$(".result_gif").html("<video width='100%' height='300' control autoplay><source src='assets/imgs/avatar_video.mp4' type='video/mp4'></video>");
 
 var intializeAvatar = function(){
 
@@ -62,12 +79,14 @@ console.log(avatarPower);
 if (avatarPower > avatarState){
 	losses++;
 	$("#lose").html(losses);
-	$("#result").html("The power overwhelmed you! Try again!");
+	$("#result").html("The power overwhelmed Aang! Try Again...");
+	$(".result_gif").html(randomLossGif);
 	avatarPower = 0;
 	intializeAvatar();
 
 	$(".element").on("click", function(){
 	$("#result").html("But I believe, Aang can save the world...");
+	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace2.gif'/>");
 	});
 
 } 
@@ -75,11 +94,13 @@ else if (avatarPower === avatarState){
 	wins++;
 	$("#win").html(wins);
 	$("#result").html("You have achieved the Avatar state!");
+	$(".result_gif").html(randomWinGif);
 	avatarPower = 0;
 	intializeAvatar();
 
 	$(".element").on("click", function(){
 	$("#result").html("But I believe, Aang can save the world...")
+	$(".result_gif").html("<img class= 'img-fluid mx-auto d-block' width='500px' src='assets/imgs/peace.gif'/>");
 	});
 
 }

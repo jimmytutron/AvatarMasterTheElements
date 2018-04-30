@@ -8,67 +8,68 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,700i|Nanum+Myeongjo:400,800" rel="stylesheet">
 
     <title>AVATAR : Master the elements</title>
   </head>
   <body>
     <div class="container">
 
-    <div class="row aang">
-        <div class="col-sm d-flex justify-content-center">
-          <img class="img-fluid" src ="assets/imgs/avatar_state.png"/>
+    <div class="row">
+        <div class="col-sm">
+          <img class="img-fluid aang mx-auto d-block" src ="assets/imgs/avatar_state.png"/>
         </div>
       </div>
-      <div class="row">
+      <div class="row my-2">
         <div class="col-sm">
           <h2 id="result"></h2>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-8">
-          <video width="100%" height="300">
-            <source src="assets/imgs/avatar_video.mp4" type="video/mp4">
-          </video>
+      <div class="row justify-content-md-center elements">
+        <div class="col-lg-2 element water">
+          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse" src="assets/imgs/water.png"/>
         </div>
-        <div class="col-sm-4">
-          <p> Sozin's Comet has passed through the night sky, greatly enhancing the strength of the Fire Nation. Aang must master the "Avatar State" to defeat Fire Lord Ozai and bring peace to the world. Help him by combining the powers of the four elements. Be warned however, if the strength of the elements surpasses the limits in which Aang can handle, he will perish and the world will fall into chaos.</p>
+        <div class="col-lg-2 element earth">
+          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse" src="assets/imgs/earth.png"/>
         </div>
-      </div>
-
-      <div class = "row">
-      <div class = "col-sm-6">
-                  <p>Power level to achieve Avatar State: <span id="strength"></span></p>
-      </div>
-      <div class = "col-sm-6">
-        <p>Current Power Level: <span id="userStrength"></span></p>
-      </div>
-    </div>
-
-
-      <div class="row elements">
-        <div class="col-sm-3 element water">
-          <img class="img-fluid" src="assets/imgs/water.png"/>
+        <div class="col-lg-2 element fire">
+          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse" src="assets/imgs/fire.png"/>
         </div>
-        <div class="col-sm-3 element earth">
-          <img class="img-fluid" src="assets/imgs/earth.png"/>
-        </div>
-        <div class="col-sm-3 element fire">
-          <img class="img-fluid" src="assets/imgs/fire.png"/>
-        </div>
-        <div class="col-sm-3 element air">
-          <img class="img-fluid" src="assets/imgs/air.png"/>
+        <div class="col-lg-2 element air">
+          <img class="img-fluid w-75 my-2 mx-auto d-block hvr-pulse" src="assets/imgs/air.png"/>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-6">
+      <div class = "row justify-content-center">
+        <div class = "col-sm-5 lora text-center">
+          <p class ="score">Power level needed: <span id="strength"></span></p>
+        </div>
+        <div class = "col-sm-5 lora text-center">
+          <p class ="score">Current Power Level: <span id="userStrength"></span></p>
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-sm-7 result_gif">
+        </div>
+        <div class="col-sm-5 lora w-100">
+          <p> Sozin's Comet has passed through the night sky, greatly enhancing the strength of the Fire Nation. Aang must master the "Avatar State" to defeat Fire Lord Ozai and bring peace to the world. Help him by combining the powers of the four elements. Be warned however, if the strength of the elements surpasses the limits in which Aang can handle, he will perish and the world will fall into chaos. Good Luck!</p>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-5 lora text-center score">
             <h2>Victories: <span id="win"></span></h2>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-5 lora text-center score">
             <h2>Defeats: <span id="lose"></span></h2>
         </div>
       </div>
+        </div>
+      </div>
+
+
+
+
 
 
     </div>
