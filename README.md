@@ -2,7 +2,7 @@
 
 ![logo](assets/imgs/avatar_state.png)
 
-The time has come for Aang to master the elements and enter the "Avatar State". The fate of the world falls heavily on his shoulders. Help Aang defeat Fire Lord Ozai by combining the powers of water, earth, fire, and air. Be warned, however, the elements' powers are not to be taken lightly. Achieve the Avatar State and bring peace to the nations.
+The time has come for Aang to master the elements and enter the "Avatar State". The fate of the world falls heavily on his shoulders. Help Aang defeat Fire Lord Ozai by mastering and combining the powers of water, earth, fire, and air. Be warned, however, the elements' powers are not to be taken lightly. Achieve the Avatar State and bring peace to the nations.
 
 ### How to Play
 
@@ -12,13 +12,14 @@ A modern web browser is recommeded for playing this game. Thanks to Bootstrap, t
 
 A random number, called the "Power Level Needed" ,highlighted in red, will be generated at the start of each game.
 
-There are four element symbols in the middle of the game page. Each symbol is given a random value that is hidden. By clicking on each symbol, the hidden value will be added to the "Current Power Level".
+There are four element symbols in the middle of the game page. Each symbol is given a random value that is hidden. By clicking on each symbol, the hidden value will be added to the "Current Power Level" highlighted in green.
 
-Achieve the Avatar State and save the world by matching the current power level to the power level needed. If the current power level exceeds the power level needed, Aang will be overwhelm and the world will fall into chaos. The balance of the world hinges on your hands.
+Achieve the Avatar State and save the world by matching the current power level to the power level needed. If the current power level exceeds the power level needed, Aang will be overwhelmed and the world will fall into chaos. The balance of the world hinges on your hands.
 
 Good Luck!
 
-To play the game again, click on Aang's to reset the power levels.
+To play the game again, click on Aang to reset the power levels.
+Your total victories and defeats will be logged after each game.
 
 ## Play the Game
 Launch the game here! [Avatar - Master the Elements](https://jimmytutron.github.io/AvatarMasterTheElements/) 
