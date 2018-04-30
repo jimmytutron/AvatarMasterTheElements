@@ -8,19 +8,19 @@ The time has come for Aang to master the elements and enter the "Avatar State". 
 
 A modern web browser is recommeded for playing this game. Thanks to Bootstrap, this game is fully responsive and playable on mobile devices.
 
-#### Rules
+### Rules
 
-A random number, called the "Power Level Needed" ,highlighted in red, will be generated at the start of each game.
+* A random number, called the "Power Level Needed" ,highlighted in red, will be generated at the start of each game.
 
-There are four element symbols in the middle of the game page. Each symbol is given a random value that is hidden. By clicking on each symbol, the hidden value will be added to the "Current Power Level" highlighted in green.
+* There are four element symbols in the middle of the game page. Each symbol is given a random value that is hidden. By clicking on each symbol, the hidden value will be added to the "Current Power Level" highlighted in green.
 
-Achieve the Avatar State and save the world by matching the current power level to the power level needed. If the current power level exceeds the power level needed, Aang will be overwhelmed and the world will fall into chaos. The balance of the world hinges on your hands.
+* Achieve the Avatar State and save the world by matching the current power level to the power level needed. If the current power level exceeds the power level needed, Aang will be overwhelmed and the world will fall into chaos. The balance of the world hinges on your hands.
 
-To play the game again, click on Aang to reset the power levels.
+* To play the game again, click on Aang to reset the power levels.
 
-Your total number of victories and defeats will be logged after each game.
+* Your total number of victories and defeats will be logged after each game.
 
-Good Luck!!
+### Good Luck!!
 
 ## Play the Game :fire:
 Launch the game here! [Avatar - Master the Elements](https://jimmytutron.github.io/AvatarMasterTheElements/) 
