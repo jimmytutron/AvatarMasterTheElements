@@ -94,7 +94,7 @@ if (avatarPower > avatarState){
 	$("#lose").html(losses);
 	//display random loser gif and loss message
 	var randomLossGif = lossGifs[Math.floor(Math.random() * lossGifs.length)];
-	$("#result").html("The power overwhelmed Aang! Try Again...  <br> <span class ='smaller'> click on Aang to play again </span> ");
+	$("#result").html("<span class = 'nay'> The power overwhelmed Aang! Try Again... </span> <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomLossGif);
 	//reset the values
 	avatarState = 99999;
@@ -116,7 +116,7 @@ else if (avatarPower === avatarState){
 	//updates score in HTML
 	$("#win").html(wins);
 	var randomWinGif= winGifs[Math.floor(Math.random() * winGifs.length)];
-	$("#result").html("You have achieved the Avatar state! <br> <span class ='smaller'> click on Aang to play again </span> ");
+	$("#result").html("<span class='yay'> You have achieved the Avatar state! </span> <br> <span class ='smaller'> click on Aang to play again </span> ");
 	$(".result_gif").html(randomWinGif);
 	avatarState = 99999;
 	avatarPower = 0;

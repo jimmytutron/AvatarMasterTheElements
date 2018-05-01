@@ -66,6 +66,14 @@ html, body {
 	color:#be3939;
 }
 
+.yay {
+	color:#086ad8;
+}
+
+.nay {
+	color:#d80808;
+}
+
 .smaller {
 	font-weight: normal;
 	font-size: 25px;
