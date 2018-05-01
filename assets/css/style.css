@@ -85,6 +85,10 @@ html, body {
 		background-size: 75%;
 	}
 
+	.score {
+		font-size: 29px;
+	}
+
 	#result {
 		font-size: 30px;
 	}
@@ -97,7 +101,11 @@ html, body {
 	}
 
 	.score {
-		font-size: 28px;
+		font-size: 25px;
+	}
+
+	.about {
+		margin: auto;
 	}
 }
 
