@@ -125,7 +125,7 @@ else if (avatarPower === avatarState){
 	avatarPower = 0;
 	intializeAvatar();
 	$("#result").html("But I believe, Aang can save the world...")
-		var randomDefaultGif = mainGif[Math.floor(Math.random() * mainGif.length)];
+		var randomMainGif = mainGif[Math.floor(Math.random() * mainGif.length)];
 	$(".result_gif").html(randomMainGif);
 	});
 
